@@ -43,4 +43,17 @@ public class Recursividad {
     }
     return invertir(cadena.substring(cadena.length() - 1));
   }
+
+  public static int fib(int n) {
+    int res;
+    // Base Case
+    if(n == 0){
+      return 0;
+    }
+    if(n == 1 ){
+      return 1;
+    }
+    res = fib(n-1) + fib(n-2);
+    return res;
+  }
 }
